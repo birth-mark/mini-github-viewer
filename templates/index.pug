@@ -2,6 +2,21 @@ doctype html
 html
 	head
 		title GitHub Repo
+		link(href='/css/main.css' rel='stylesheet' type='text/css')
+		script(src='/routers/index.js' type='text/javascript' async)
 	body
-		input
-		button Submit
+		form#form
+			input#clientName
+			button#btn Submit
+		div#respones
+
+		script#error(type="text/template")
+			h1 %Error%
+		script#tamplate(type="text/template")
+			h1 %Name%
+			img(src = '%src%')
+			ul Repo
+				li %repo%
+					span %description%
+
+
